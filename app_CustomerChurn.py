@@ -96,7 +96,7 @@ if st.session_state.tab_selected == 0:
 
     # Display Result
     st.subheader('Prediction Result:')
-    st.write('Customer Churn : ', prediction)
+    st.write('Customer Churn : ', prediction[0])
 
 # Tab 2: Visualize Data
 elif st.session_state.tab_selected == 1:
