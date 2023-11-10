@@ -42,7 +42,7 @@ if st.session_state.tab_selected == 0:
     PaymentMethod = st.radio('Payment Method', PaymentMethod_encoder.classes_)
     PaperlessBilling = st.checkbox('Paperless Billing', PaperlessBilling_encoder.classes_)
     ContentType = st.radio('Content Type', ContentType_encoder.classes_)
-    MultiDeviceAccess = st.checkbox('Multiple Device Access', MultiDeviceAccess_encoder.classes_)
+    MultiDeviceAccess = st.radio('Multiple Device Access', MultiDeviceAccess_encoder.classes_)
     DeviceRegistered = st.selectbox('Device Registered', DeviceRegistered_encoder.classes_)
     ViewingHoursPerWeek = st.number_input('Viewing Hours Per Week', 0, 168, 24)
     AverageViewingDuration = st.number_input('Average Views Duration', 0, 200, 50)
@@ -52,8 +52,8 @@ if st.session_state.tab_selected == 0:
     SupportTicketsPerMonth = st.slider('User Support Tickets Per Month', 0, 10, 0)
     Gender = st.radio('Gender', Gender_encoder.classes_)
     WatchlistSize = st.number_input('Total Watchlist', 0, 25, 5)
-    ParentalControl = st.checkbox('Under Parental Control', ParentalControl_encoder.classes_)
-    SubtitlesEnabled = st.checkbox('Subtitles Enabled', SubtitlesEnabled_encoder.classes_)
+    ParentalControl = st.radio('Under Parental Control', ParentalControl_encoder.classes_)
+    SubtitlesEnabled = st.radio('Subtitles Enabled', SubtitlesEnabled_encoder.classes_)
 
     # Create a DataFrame for the user input
     user_input = pd.DataFrame({
