@@ -48,7 +48,7 @@ if st.session_state.tab_selected == 0:
     AverageViewingDuration = st.number_input('Average Views Duration', 0, 200, 50)
     ContentDownloadsPerMonth = st.slider('Contents Downloaded Per Month', 0, 100, 50)
     GenrePreference = st.selectbox('Genre Preference', GenrePreference_encoder.classes_)
-    UserRating = st.number_input('User Rating', 0, 5, 2)
+    UserRating = st.number_input('User Rating', 0.0, 5.0, 2.5)
     SupportTicketsPerMonth = st.slider('User Support Tickets Per Month', 0, 10, 0)
     Gender = st.radio('Gender', Gender_encoder.classes_)
     WatchlistSize = st.number_input('Total Watchlist', 0, 25, 5)
