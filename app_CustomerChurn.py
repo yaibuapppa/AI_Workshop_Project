@@ -40,7 +40,7 @@ if st.session_state.tab_selected == 0:
     TotalCharges = st.number_input('Total Charges', 0, 5000, 1500)
     SubscriptionType = st.selectbox('Subscription Type', SubscriptionType_encoder.classes_)
     PaymentMethod = st.radio('Payment Method', PaymentMethod_encoder.classes_)
-    PaperlessBilling = st.checkbox('Paperless Billing', PaperlessBilling_encoder.classes_)
+    PaperlessBilling = st.radio('Paperless Billing', PaperlessBilling_encoder.classes_)
     ContentType = st.radio('Content Type', ContentType_encoder.classes_)
     MultiDeviceAccess = st.radio('Multiple Device Access', MultiDeviceAccess_encoder.classes_)
     DeviceRegistered = st.selectbox('Device Registered', DeviceRegistered_encoder.classes_)
