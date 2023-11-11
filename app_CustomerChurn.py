@@ -37,7 +37,7 @@ if st.session_state.tab_selected == 0:
     # User Input Form
     AccountAge = st.slider('''Account's Age (Month)''', 0, 100, 30)
     MonthlyCharges = st.number_input('Monthly Charges', 0.0, 20.0, 5.0)
-    TotalCharges = st.number_input('''Total Charges over the account's lifetime''', 0.0, 5000.0, 1500.0)
+    TotalCharges = st.number_input('''Total Charges Over Account's Lifetime''', 0.0, 5000.0, 1500.0)
     SubscriptionType = st.selectbox('Subscription Type', SubscriptionType_encoder.classes_)
     PaymentMethod = st.radio('Payment Method', PaymentMethod_encoder.classes_)
     PaperlessBilling = st.radio('Paperless Billing', PaperlessBilling_encoder.classes_)
