@@ -35,7 +35,7 @@ if st.session_state.tab_selected == 0:
     st.header('Predict Customer Churn')
 
     # User Input Form
-    AccountAge = st.slider('Age', 0, 100, 30)
+    AccountAge = st.slider('Account's Age (Month)', 0, 100, 30)
     MonthlyCharges = st.number_input('Monthly Charges', 0.0, 20.0, 5.0)
     TotalCharges = st.number_input('Total Charges', 0.0, 5000.0, 1500.0)
     SubscriptionType = st.selectbox('Subscription Type', SubscriptionType_encoder.classes_)
